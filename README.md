@@ -6,11 +6,6 @@
 
 O Simulador MIPS é uma ferramenta desenvolvida para auxiliar estudantes e profissionais a entenderem o funcionamento de processadores da arquitetura MIPS. O projeto permite carregar e executar códigos Assembly, visualizar o estado dos registradores, acompanhar a execução passo a passo e testar instruções de memória, aritmética, lógica e sistema. O objetivo é fornecer um ambiente visual e interativo para aprendizado de arquitetura de computadores.
 
-## Autores
-
-* Thiago Wesley Pasquim de Melo
-* Vinicius Gabriel Giordani Barbosa
-
 ## Ambiente de Desenvolvimento
 
 * **Sistema Operacional:** Linux (Ubuntu recomendado)
@@ -134,3 +129,14 @@ Certifique-se de ter o compilador g++, o CMake e as bibliotecas do Qt instalados
 * **Lógica:** AND, OR, SLL, SLT
 * **Memória:** LW, SW, LUI, LI
 * **Sistema:** SYSCALL (Suporte para $v0=1 print_int e $v0=10 exit)
+
+## Desenvolvedores
+
+| [<img loading="lazy" src="https://avatars.githubusercontent.com/u/162636181?v=4" width=115><br><sub>Thiago Wesley</sub>](https://github.com/Twelll) | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/188619435?v=4" width=115><br><sub>Vinicius Gabriel</sub>](https://github.com/Vinegabriel) |
+:---: | :---: |
+
+Projeto acadêmico desenvolvido para fins educacionais.
+
+---
+
+⭐ Se este projeto te ajudou, considere dar uma estrela no repositório!
