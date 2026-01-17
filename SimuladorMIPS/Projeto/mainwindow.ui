@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Simulador MIPS - UTFPR</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <layout class="QVBoxLayout" name="layoutEsquerdo" stretch="0,0,0,0,1,0,0">
+      <item>
+       <layout class="QHBoxLayout" name="layoutBotoes">
+        <item>
+         <widget class="QPushButton" name="btnArquivo">
+          <property name="text">
+           <string>Abrir Arquivo</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnPasso">
+          <property name="text">
+           <string>Passo a Passo</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnExecutar">
+          <property name="text">
+           <string>Executar Tudo</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnResetar">
+          <property name="text">
+           <string>Resetar</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QLabel" name="lblInstrAtual">
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: blue;</string>
+        </property>
+        <property name="text">
+         <string>Próxima: --</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="lblBinario">
+        <property name="font">
+         <font>
+          <family>Courier</family>
+         </font>
+        </property>
+        <property name="text">
+         <string>Binário: --</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="labelCodigo">
+        <property name="text">
+         <string>Código Assembly:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTextEdit" name="txtCodigo">
+        <property name="font">
+         <font>
+          <family>Courier</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="labelLog">
+        <property name="text">
+         <string>Saída (Log/Syscall):</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTextEdit" name="txtLog">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>150</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: #f0f0f0;</string>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="layoutDireito">
+      <item>
+       <widget class="QLabel" name="labelRegs">
+        <property name="text">
+         <string>Registradores</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTableWidget" name="tabelaRegs">
+        <column>
+         <property name="text">
+          <string>Reg</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Dec</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Hex</string>
+         </property>
+        </column>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
